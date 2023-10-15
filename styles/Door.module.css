@@ -1,0 +1,75 @@
+.area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--area-door-width);
+    height: var(--area-door-height);
+    margin: 15px;
+}
+
+.structure {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    border-left: 5px solid var(--door-color);
+    border-top: 5px solid var(--door-color);
+    border-right: 5px solid var(--door-color);
+    width: 90%;
+    background-color: #0005;
+}
+
+
+.door {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #d2691e;
+    padding: 25px;
+
+}
+
+.ground {
+    height: 10px;
+    width: 100%;
+    background-color: #d5dbe0;
+}
+
+.ground_i {
+    margin-top: 1.5px;
+    height: 7px;
+    width: 99%;
+    background-color: #c3c7ca;
+}
+
+
+.number {
+    font-size: 3rem;
+    user-select: none;
+}
+
+.doorknob {
+    position: absolute;
+    top: calc(0.45 * var(--area-door-height));
+    align-self: flex-start;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: var(--door-color);
+}
+
+.selected {
+    border-left: 5px solid var(--door-selected-color);
+    border-top: 5px solid var(--door-selected-color);
+    border-right: 5px solid var(--door-selected-color);
+}
+
+.selected .number {
+    color: var(--doorknob-color);
+
+}
+
+.selected .doorknob {
+    background-color: var(--doorknob-color);
+}

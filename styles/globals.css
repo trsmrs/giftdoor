@@ -4,11 +4,15 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-color: #444;
+  color: #fff;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  
 }
 
 * {
@@ -19,8 +23,17 @@ a {
   html {
     color-scheme: dark;
   }
-  body {
-    color: white;
-    background: black;
-  }
+
 }
+
+:root{
+  --area-door-height: 310px;
+  --area-door-width: 200px;
+
+--door-color: #a52a2a;
+--door-selected-color: #eeee0d;
+
+--doorknob-color: #eeee0d;
+
+}
+
